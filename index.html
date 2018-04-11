@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Shopping-Cart</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Shopping-Cart</title>
 </head>
+
 <body>
-  <!-- TOP -->
-<section class="container-fluid pb-2 pt-2 bg-dark">
-	<section class="container text-center">
-		<h1>TIENDICA DE FRUTAS</h1>
+	<!-- TOP -->
+	<section class="container-fluid pb-2 pt-2 bg-dark">
+		<section class="container text-center">
+			<h1>TIENDICA DE FRUTAS</h1>
+		</section>
 	</section>
-</section>
 
-  <!-- FIN TOP -->
-  <section class="container-fluid">
-  	<section class="container">
-  		<section class="row">
-  			<section class="col-md-8 bg-primary">
-  				<section id="productos">
-  					
-  				</section>
-  			</section>
-  			<section class="col-md-4 bg-secondary">
-  				
-  			</section>
-  		</section>
-  	</section>
-  </section>
+	<!-- FIN TOP -->
+	<section class="container-fluid">
+		<section class="container">
+			<section class="row">
+				<section class="col-md-9 bg-primary">
+					<section id="productos">
+						<section class="col-md-4  m-1 p-1">
+							<section class="card" style="width: 18rem;">
+								<img class="card-img-top" src="https://www.frutadelasarga.com/server/Portal_0008706/img/products/manzana-roja-benejama_1225224.jpg" alt="Card image cap">
+								<section class="card-body text-center">
+									<h5 class="card-title" id ="name"></h5>
+									<p class="card-text" id="description"></p>
+									<section class="row">
+										<section class="col-sm">
+											<p id="price"></p>
+										</section>
+										<section class="col-sm">
+											<p id="stock"></p>
+										</section>
+									</section>
+									<button class="btn btn-primary" id="manzana" onclick="shoppingCart1.addProduct(this.id)">añadir al carrito</button>
+								</section>
+							</section>
+						</section>
+
+						<section class="col-md-4  m-1 p-1">
+								<section class="card" style="width: 18rem;">
+									<img class="card-img-top" src="https://www.frutadelasarga.com/server/Portal_0008706/img/products/manzana-roja-benejama_1225224.jpg" alt="Card image cap">
+									<section class="card-body text-center">
+										<h5 class="card-title" id ="name"></h5>
+										<p class="card-text" id="description"></p>
+										<section class="row">
+											<section class="col-sm">
+												<p id="price"></p>
+											</section>
+											<section class="col-sm">
+												<p id="stock"></p>
+											</section>
+										</section>
+										<button class="btn btn-primary" id="manzana" onclick="shoppingCart1.addProduct(this.id)">añadir al carrito</button>
+									</section>
+								</section>
+							</section>
+					</section>
+				</section>
+				<section class="col-md-3 bg-secondary">
+
+				</section>
+			</section>
+		</section>
+	</section>
 
 
-  <script src="js/main.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
+
+	<script src="js/main.js"></script>
 </body>
+
 </html>
