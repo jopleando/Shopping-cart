@@ -56,18 +56,19 @@ for (k in productsInShop) {
 				'<section class="card-body text-center">' +
 					'<h5 class="card-title">' + productsInShop[k].name + '</h5>' +
 					'<p class="card-text">' + productsInShop[k].description + '</p>' +
-						'<section class="row">' +
-							'<section class="col-sm">' +
+					/*	'<section class="row">' +
+							'<section class="col-sm">' +*/
 								'<p id="price">Precio: ' + productsInShop[k].price + '€</p>' +
-							'</section>' +
+							/*'</section>' +
 							'<section class="col-sm">' +
 								'<p id="stock">' + productsInShop[k].stock + ' Uds</p>' +
 							'</section>' +
-						'</section>' +
+						'</section>' +*/
 					'<button class="btn btn-primary" onclick="shoppingCart1.addProduct('+[k]+')">añadir al carrito</button>' +
 				'</section>' +
 			'</section>' +
 		'</section>';
+		//console.log(k);
 }
 
 
