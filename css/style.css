@@ -1,8 +1,21 @@
 body {
-	font-size: 16px;
-	font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 h1 {
-	color: white!important;
+    color: white !important;
 }
+
+.product {
+    float: left;
+    margin: 0 auto !important;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto!important;
+}
+
+.card img {}
